@@ -16,10 +16,10 @@ const Header = () => {
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="relative overflow-hidden rounded-lg">
               <Image
-                src="/images/logo-2.png"
+                src="/images/logo-noir.png"
                 alt="logo"
-                width={47}
-                height={47}
+                width={120}
+                height={50}
                 className="transition-transform duration-300 group-hover:scale-110"
               />
             </div>
