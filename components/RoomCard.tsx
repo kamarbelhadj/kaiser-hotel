@@ -1,17 +1,26 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface RoomCardProps {
+  id: string;
   image: string;
   name: string;
-  bethroom: number;
+  bathroom: number;
   price: number;
   type: string;
 }
 
-const RoomCard = ({ image, name, bethroom, price, type }: RoomCardProps) => {
+const RoomCard = ({
+  id,
+  image,
+  name,
+  bathroom,
+  price,
+  type,
+}: RoomCardProps) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden w-full max-w-sm mx-auto hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-white shadow-lg overflow-hidden w-full max-w-sm mx-auto hover:shadow-xl transition-shadow duration-300">
       {/* Room Image */}
       <div className="relative w-full h-48 sm:h-56 md:h-64">
         <Image
@@ -55,7 +64,7 @@ const RoomCard = ({ image, name, bethroom, price, type }: RoomCardProps) => {
             />
           </div>
           <p className="text-gray-600 text-sm sm:text-base">
-            {bethroom} Bathroom{bethroom !== 1 ? "s" : ""}
+            {bathroom} Bathroom{bathroom !== 1 ? "s" : ""}
           </p>
         </div>
         <div className="flex items-center justify-between">
@@ -67,10 +76,11 @@ const RoomCard = ({ image, name, bethroom, price, type }: RoomCardProps) => {
               per night
             </span>
           </div>
-
-          <button className="bg-blue-800 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-full text-sm sm:text-base font-medium hover:bg-blue-700 active:bg-blue-900 transition-colors duration-300 shadow-md hover:shadow-lg transform hover:scale-105 active:scale-95">
-            Book Now
-          </button>
+          <Link href={`/rooms/${id}`}>
+            <button className="bg-blue-800 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-full text-sm sm:text-base font-medium hover:bg-blue-700 active:bg-blue-900 transition-colors duration-300 shadow-md hover:shadow-lg transform hover:scale-105 active:scale-95 cursor-pointer">
+              See details
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -33,12 +33,6 @@ const Header = () => {
           {/* CTA Button - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
-              href="/contact"
-              className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
-            >
-              Contact
-            </Link>
-            <Link
               href="/book"
               className="px-6 py-2 bg-blue-600 text-white text-sm font-medium rounded-full hover:bg-blue-700 transition-all duration-200 shadow-md hover:shadow-lg"
             >

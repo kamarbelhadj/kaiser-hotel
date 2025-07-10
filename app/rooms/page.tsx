@@ -58,10 +58,11 @@ const Page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredRooms.map((room) => (
               <RoomCard
+                id={room.id}
                 key={room.id}
-                image={room.Images.image1}
+                image={room.Images[0]}
                 name={room.name}
-                bethroom={room.bathroom}
+                bathroom={room.bathroom}
                 price={room.price}
                 type={room.type}
               />
