@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { roomTypes } from "@/lib/assets";
+import Link from "next/link";
 
 const RoomPreview = () => {
   const [selectedRoom, setSelectedRoom] = useState("single");
@@ -44,9 +45,12 @@ const RoomPreview = () => {
                 {currentRoom?.description}
               </p>
               <div className="w-1/2 ">
-                <button className="px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-blue-700 hover:bg-blue-500 text-white font-medium transition-colors duration-300 text-sm sm:text-base uppercase  w-full sm:w-auto">
-                  Book Now
-                </button>
+                <Link href={"/rooms"}>
+                  {" "}
+                  <button className="px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-blue-700 hover:bg-blue-500 text-white font-medium transition-colors duration-300 text-sm sm:text-base uppercase  w-full sm:w-auto">
+                    Book Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

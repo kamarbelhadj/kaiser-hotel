@@ -93,9 +93,7 @@ export default function BookingBar() {
               asChild
               className="w-full sm:w-auto px-6 h-11 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-3xl"
               disabled={!checkIn || !checkOut}
-            >
-              <Link href="/book">Book Now</Link>
-            </Button>
+            ></Button>
           </div>
         </div>
       </div>

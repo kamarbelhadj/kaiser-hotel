@@ -18,7 +18,7 @@ const Page = () => {
     <div>
       <div className="relative w-full h-screen mb-6">
         <Image
-          src="/images/bg-rooms.png"
+          src="/images/galerie1.png"
           alt="room"
           fill
           className="object-cover z-0"
