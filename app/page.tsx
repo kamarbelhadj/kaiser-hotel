@@ -3,6 +3,7 @@ import RoomPreview from "@/components/RoomPreview";
 import Image from "next/image";
 import { roomTypes } from "@/lib/assets";
 import RoomsTypeCard from "@/components/RoomsTypeCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -59,9 +60,11 @@ export default function Home() {
 
         {/* Centered Button */}
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <button className="px-8 py-4 bg-white bg-opacity-90 hover:bg-opacity-100 text-gray-800 font-bold text-lg rounded-4xl shadow-lg transition-all duration-300 tracking-wide hover:bg-amber-100">
-            Look Inside Hotel Il Kaiser
-          </button>
+          <Link href={"/galerie"}>
+            <button className="px-8 py-4 bg-white bg-opacity-90 hover:bg-opacity-100 text-gray-800 font-bold text-lg rounded-4xl shadow-lg transition-all duration-300 tracking-wide hover:bg-amber-100 cursor-pointer">
+              Look Inside Hotel Il Kaiser
+            </button>
+          </Link>
         </div>
       </div>
 

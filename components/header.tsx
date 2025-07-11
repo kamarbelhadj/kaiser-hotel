@@ -72,7 +72,6 @@ const Header = () => {
                 <Link
                   href="/book"
                   className="block w-full px-4 py-3 bg-blue-600 text-white text-base font-medium rounded-lg hover:bg-blue-700 transition-colors text-center"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   Book Now
                 </Link>

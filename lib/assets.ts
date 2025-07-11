@@ -126,10 +126,10 @@ export const Rooms = [
     ],
     Images: [
       "/images/room3.jpg",
+      "/images/room3-1.jpg",
       "/images/room3-2.jpg",
       "/images/room3-3.jpg",
       "/images/room3-4.jpg",
-      "/images/room3-5.jpg",
     ],
     price: roomTypes[2].price,
     bathroom: 2,
@@ -181,3 +181,22 @@ export const Rooms = [
     bathroom: 2,
   },
 ];
+const offers = [
+    {
+      id: 1,
+      title: "Weekend Getaway Special",
+      description:
+        "Book 2 nights and get 20% off your stay. Valid for weekend bookings.",
+      discount: "20% OFF",
+      validUntil: "2025-08-31",
+      terms: "Valid for weekends only. Cannot be combined with other offers.",
+    },
+    {
+      id: 2,
+      title: "Extended Stay Discount",
+      description: "Stay 5 nights or more and save 30% on your accommodation.",
+      discount: "30% OFF",
+      validUntil: "2025-09-15",
+      terms: "Minimum 5 nights required. Advance booking required.",
+    },
+  ];

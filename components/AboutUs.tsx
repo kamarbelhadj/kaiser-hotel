@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Link from "next/link";
 
 const images = [
   { id: 1, src: "/images/1.png" },
@@ -32,9 +33,11 @@ const AboutUs = () => {
               <br />
               possible.
             </p>
-            <button className="px-6 py-3 bg-blue-500 text-white rounded-3xl hover:bg-blue-600 transition-colors font-medium">
-              Learn More
-            </button>
+            <Link href="/about">
+              <button className="px-6 py-3 bg-blue-500 text-white rounded-3xl hover:bg-blue-600 transition-colors font-medium cursor-pointer">
+                Learn More
+              </button>
+            </Link>
           </div>
 
           {/* Carousel */}
