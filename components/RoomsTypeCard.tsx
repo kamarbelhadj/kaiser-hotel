@@ -1,5 +1,6 @@
 import React from "react";
 import { RoomType, roomTypes } from "@/lib/assets";
+import Link from "next/link";
 
 const RoomsTypeCard = ({ roomType }: { roomType: RoomType }) => {
   return (
@@ -31,9 +32,12 @@ const RoomsTypeCard = ({ roomType }: { roomType: RoomType }) => {
           {roomType.price} DT
         </p>
 
-        <button className="px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 rounded-full bg-blue-700 hover:bg-blue-500 text-white font-medium transition-colors duration-300 text-sm sm:text-base lg:text-lg uppercase w-full sm:w-auto min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] mb-4">
-          Book Now
-        </button>
+        <Link href={"/rooms"}>
+          {" "}
+          <button className="px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 rounded-full bg-blue-700 hover:bg-blue-500 text-white font-medium transition-colors duration-300 text-sm sm:text-base lg:text-lg uppercase w-full sm:w-auto min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] mb-4">
+            Book Now
+          </button>
+        </Link>
       </div>
     </div>
   );

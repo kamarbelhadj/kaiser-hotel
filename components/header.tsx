@@ -33,7 +33,7 @@ const Header = () => {
           {/* CTA Button - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
-              href="/book"
+              href="/rooms"
               className="px-6 py-2 bg-blue-600 text-white text-sm font-medium rounded-full hover:bg-blue-700 transition-all duration-200 shadow-md hover:shadow-lg"
             >
               Book Now
@@ -70,7 +70,7 @@ const Header = () => {
                   Contact
                 </Link>
                 <Link
-                  href="/book"
+                  href={"/rooms"}
                   className="block w-full px-4 py-3 bg-blue-600 text-white text-base font-medium rounded-lg hover:bg-blue-700 transition-colors text-center"
                 >
                   Book Now

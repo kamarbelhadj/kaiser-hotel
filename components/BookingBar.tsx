@@ -89,11 +89,11 @@ export default function BookingBar() {
 
           {/* Book Now Button */}
           <div className="flex flex-col justify-end sm:w-auto">
-            <Button
-              asChild
-              className="w-full sm:w-auto px-6 h-11 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-3xl"
-              disabled={!checkIn || !checkOut}
-            ></Button>
+            <Link href="/paiment">
+              <Button className="w-full sm:w-auto px-6 h-11 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-3xl">
+                Book Now
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

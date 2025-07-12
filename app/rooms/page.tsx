@@ -24,7 +24,7 @@ const Page = () => {
           className="object-cover z-0"
         />
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4">
-          Our Rooms And Suites
+          Our Rooms
         </h1>
       </div>
 
