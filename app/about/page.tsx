@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const AboutUs = () => {
   return (
@@ -20,8 +20,8 @@ const AboutUs = () => {
           <p className="text-gray-600 text-lg leading-relaxed">
             Our modern rooms feature all the essential amenities you need for a
             pleasant stay, including free WiFi, comfortable beds, and 24-hour
-            front desk service. Whether you're traveling for business or
-            leisure, we're here to make your visit memorable.
+            front desk service. Whether youre traveling for business or leisure,
+            were here to make your visit memorable.
           </p>
         </section>
 

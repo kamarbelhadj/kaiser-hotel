@@ -181,7 +181,7 @@ export const Rooms = [
     bathroom: 2,
   },
 ];
-const offers = [
+/*const offers = [
     {
       id: 1,
       title: "Weekend Getaway Special",
@@ -199,4 +199,4 @@ const offers = [
       validUntil: "2025-09-15",
       terms: "Minimum 5 nights required. Advance booking required.",
     },
-  ];
+  ];*/

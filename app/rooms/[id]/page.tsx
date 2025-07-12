@@ -3,7 +3,7 @@ import { Rooms } from "@/lib/assets";
 import { redirect } from "next/navigation";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+
 import {
   Carousel,
   CarouselContent,

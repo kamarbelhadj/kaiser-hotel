@@ -1,5 +1,5 @@
 import React from "react";
-import { RoomType, roomTypes } from "@/lib/assets";
+import { RoomType } from "@/lib/assets";
 import Link from "next/link";
 
 const RoomsTypeCard = ({ roomType }: { roomType: RoomType }) => {

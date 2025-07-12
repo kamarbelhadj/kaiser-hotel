@@ -27,7 +27,7 @@ const AboutUs = () => {
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-md mb-4">
               Experience the perfect blend of comfort, elegance, and
-              personalized service. Whether you're traveling for business,
+              personalized service. Whether youre traveling for business,
               enjoying a romantic getaway, or vacationing with family, our hotel
               is dedicated to making your stay as pleasant and memorable as
               <br />
