@@ -12,7 +12,7 @@ import {
 import RoomCard from "@/components/RoomCard";
 import BookingBar from "@/components/BookingBar";
 
-const RoomPage = async ({ params }: { params: { id: string } }) => {
+const RoomPage = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params;
   const room = Rooms.find((room) => room.id === id);
 
